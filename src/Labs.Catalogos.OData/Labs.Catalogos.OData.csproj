@@ -13,4 +13,9 @@
     <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="2.2.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\Excel.Loader\src\Labs.Excel.Loader.Database\Labs.Excel.Loader.Database.csproj" />
+    <ProjectReference Include="..\..\..\Excel.Loader\src\Labs.Excel.Loader.Model\Labs.Excel.Loader.Model.csproj" />
+  </ItemGroup>
+
 </Project>
