@@ -7,9 +7,9 @@ using Microsoft.AspNetCore.Cors;
 namespace Labs.Catalogos.OData.Controllers
 {
     [EnableQuery]
+    [EnableCors(Constantes.CorsPolicy)]
     public class ClaveProdServController : ODataBaseController
     {
-        [EnableCors(Constantes.CorsPolicy)]
         public IEnumerable<c_ClaveProdServ> Get()
         {
             return DbCatalogContext.ClavesProdServ;

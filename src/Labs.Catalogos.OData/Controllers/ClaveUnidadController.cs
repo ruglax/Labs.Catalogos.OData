@@ -7,9 +7,10 @@ using Microsoft.AspNetCore.Cors;
 namespace Labs.Catalogos.OData.Controllers
 {
     [EnableQuery]
+    [EnableCors(Constantes.CorsPolicy)]
+
     public class ClaveUnidadController : ODataBaseController
     {
-        [EnableCors(Constantes.CorsPolicy)]
         public IEnumerable<c_ClaveUnidad> Get()
         {
             return DbCatalogContext.ClaveUnidad;
